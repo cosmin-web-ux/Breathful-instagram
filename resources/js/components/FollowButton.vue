@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <button class="btn btn-primary ml-4" @click="followUser">Follow</button>
+        <button class="btn btn-primary ml-4" @click="followUser" v-text="buttonText"></button>
     </div>
 </template>
 
@@ -33,6 +33,13 @@ import axios from 'axios'
                         }
                     })
             }
+        },
+
+        computed: {
+            buttonText() {
+                return (this.status) ? 'Unfollow' : 'Follow'
+            }
         }
+
     }
 </script>
