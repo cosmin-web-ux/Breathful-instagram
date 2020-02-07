@@ -9,8 +9,8 @@
         <div class="col-4">
             <div>
                 <div class="d-flex align-items-center">
-                    <div pr-3>
-                        <img src="{{$post->user->profile->profileImage()}}" class="w-100" style="max-width: 40px">
+                    <div>
+                        <img src="{{$post->user->profile->profileImage()}}" class="w-100 mr-2" style="max-width: 40px">
                     </div>
                     <div>
                         <div class="font-weight-bold">
